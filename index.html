@@ -1,0 +1,328 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--$font awesome START-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font awesome END-->
+    <title>Document</title>
+    <link rel="stylesheet" href="ecdadimizin yolundan.css">
+
+
+    <style>
+        :root{
+    --bcgColor: #363940;
+    --blueColor: #5865F2;
+    --greenColor: #3BA55D;
+}
+
+/*$main START*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*$main END*/
+
+body{
+    width:100%;
+    height: 90%;
+}
+
+
+/*$container START*/
+
+#container{
+    width:100%;
+    height:auto;
+    background: #363940;
+}
+
+/*$header START*/
+
+header{
+    width:100%;
+    height: 5rem;
+    background: #5865F2;
+    position: sticky;
+    top: 0;
+}
+
+#header_text{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 .2rem white;
+    line-height: 5rem;
+    margin-left:1rem;
+}
+
+/*header END*/
+
+/*$says START*/
+
+#say1{
+    color: white;
+    opacity:60%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.3rem;
+}
+
+#say2{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    font-size: 1rem;
+    color: white;
+    opacity: 60%;
+}
+
+
+#txt2{
+    margin-top: 1.5rem;
+    margin-left:-9rem;
+}
+
+/*says END*/
+
+/*$img_Con START*/
+
+#img_Con{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+#img_Con img{
+    width:70%;
+    border-radius:100%;
+    border:solid .1rem var(--greenColor)
+}
+
+/*img_Con END*/
+
+/*$socialMedia_Box START*/
+
+#sMedia_Con{
+    display: flex;
+    justify-content: center;
+}
+
+#socialMedia_Box{
+    width:60%;
+    height:7rem;
+    display: grid;
+    grid-template-rows:1fr,1fr;
+    margin-top: 2.8rem;
+    grid-gap:1rem;
+}
+
+/*$discordBtn START*/
+
+#discordBtn{
+    background: var(--blueColor);
+    border-radius: .2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#dcText{
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    
+}
+
+#discordBtn i{
+    font-size: 2.3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+
+
+#discordBtn:hover{
+    background: #2633c0;
+    transition: 1s;
+    opacity: 70%;
+}
+
+/*discordBtn END*/
+
+/*$youtubeBtn START*/
+
+#youtubeBtn{
+    background: red;
+    border-radius: .2rem;
+    display: flex;
+    height: 2.8rem;
+    justify-content: space-between;
+}
+
+#ytText{
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+#youtubeBtn i{
+    font-size: 2.3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 1.2rem;
+}
+
+#youtubeBtn:hover{
+    background: rgb(180, 0, 0);
+    transition: 1s;
+    opacity: 70%;
+}
+
+
+/*youtubeBtn END*/
+
+/*socialMedia_Box END*/
+
+/*$footer START*/
+
+footer{
+    width:100%;
+    height: 5rem;
+    background: var(--blueColor);
+    margin-top: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerText{
+    display: flex;
+    font-size: 1.3rem;
+    color: white;
+    opacity: 50%;
+    text-shadow: 0 0 .1rem white;
+}
+
+/*footer END*/
+
+/*container END */
+
+#minScreen{
+    display: none;
+}
+
+#maxScreen{
+    display: none;
+}
+
+
+
+/*$media START*/
+
+@media screen and (max-width:220px) {
+    body{
+        background: black;
+    }
+
+    #container{
+        display: none;
+    }
+
+    #minScreen{
+        display: block;
+        color: green;
+    }
+
+    
+}
+
+
+
+@media screen and (min-width:992px) {
+    body{
+        background: black;
+    }
+
+    #container{
+        display: none;
+    }
+
+    #maxScreen{
+        display: block;
+        color: green;
+    }
+
+    
+
+}
+
+/*media END*/
+
+
+    </style>
+
+
+</head>
+<body>
+    <p id="minScreen">Malesef cihazınız sitemizi açmak için küçük</p>
+    <p id="maxScreen">Malesef cihazınız sitemizi açmak için büyük</p>
+
+    <div id="container">
+        <header>
+            <div id="header_text">ECDADIMIZIN YOLUNDAN</div>
+        </header>
+
+        <div id="content">
+            <div id="say1">Dilini,DİNİNİ,Gerçek Tarihini bilmeyen neslin GELECEĞİ YOKTUR...</div>
+            <div id="img_Con">
+                <img id="img" src="images/ppfoto.jpg" alt="">
+            </div>
+
+           <div id="sMedia_Con">
+            <div id="socialMedia_Box">
+                <a id="dcA" href="https://discord.gg/SJC7wtwj">
+                    <div id="discordBtn" onclick="dcClick()">               
+                        <div id="dcText">Discord</div>
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                </a>
+                <a id="ytA" href="https://www.youtube.com/channel/UCnPFOVcerZ_fcCkHCniADAA">
+                    <div id="youtubeBtn" onclick="ytClick()">
+                        <div id="ytText">Youtube</div>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </a>
+            </div>
+           </div>
+
+            <div id="say2">
+                <div id="txt1">Tarih Değil Hatalar Tekerrür Ediyor.</div>
+                <div id="txt2">(Abdülhamid Han)</div>
+            </div>  
+            <footer>
+                <div id="footerText">CopyRight Tüm Hakları Saklıdır © 2022</div>
+            </footer>
+        </div>
+
+        
+    </div>
+</body>
+</html>
